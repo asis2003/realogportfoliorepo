@@ -1,0 +1,13 @@
+trigger:
+- main
+
+pool:
+  name: MySelfHostedPool  # Your self-hosted agent
+
+steps:
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'NEWVM'           # Your SSH service connection
+    sourceFolder: '$(Build.SourcesDirectory)'
+    contents: '**/*'
+    targetFolder: '/var/www/html/' # Path on Azure VM

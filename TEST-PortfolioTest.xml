@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="PortfolioWebsiteTests" tests="3" failures="1" skipped="0">
+        
+        <testcase classname="HomeSectionTest" name="CheckHomeSectionExists" time="0.01"/>
+        
+        <testcase classname="AboutSectionTest" name="CheckAboutSectionExists" time="0.01"/>
+        
+        <testcase classname="ContactFormTest" name="CheckContactFormExists" time="0.01">
+            <failure message="Contact form not found or missing input fields"/>
+        </testcase>
+
+    </testsuite>
+</testsuites>
+<!-- End of TEST-PortfolioTest.xml -->
